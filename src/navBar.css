@@ -8,6 +8,10 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.header h1 {
+  color: white;
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -30,6 +34,10 @@
   position: relative;
   display: flex;
   align-items: center;
+}
+
+.cart-icon:hover {
+  transform: translateY(-5px);
 }
 
 .cart-icon img {

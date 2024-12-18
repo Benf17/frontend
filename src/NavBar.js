@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
-import "./header.css"; //
+import "./navBar.css"; //
 
 function NavBar({ cartCount, onLogout }) {
   const navigate = useNavigate();

@@ -58,7 +58,7 @@ function AddProduct() {
   return (
     <div className="add-product">
       {/* Page Header */}
-      <div className="header">
+      <div className="addProductHeader">
         <h1>Add New Product</h1>
         <a href="/admin" className="back-link">
           ← Back to Admin Home

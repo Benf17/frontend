@@ -37,7 +37,7 @@ function Cart({ cart, setCart, user_id }) {
     }
 
     try {
-      const response = await fetch("http://localhost:5001/neworder", {
+      const response = await fetch("http://localhost:5001/newOrder", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ user_id, cart }),
@@ -74,14 +74,16 @@ function Cart({ cart, setCart, user_id }) {
           cart.map((item) => (
             <div className="cart-item" key={item.id}>
               {/* Product Image */}
-              <img
-                src={item.image_url || "https://via.placeholder.com/100"}
-                alt={item.product_name}
-                className="cart-item-image"
-              />
+              {item.image_url ? (
+                <img
+                  src={item.image_url}
+                  alt={item.product_name}
+                  className="cart-item-image"
+                />
+              ) : null}
               <div className="cart-item-details">
                 {/* Product Name */}
-                <h2>{item.product_name}</h2>
+                <h2>{item.name}</h2>
                 <p>Price: ${item.price}</p>
                 <p>Total: ${(item.price * item.quantity).toFixed(2)}</p>
               </div>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./authForm.css";
+import "./loginForm.css";
 
 function AuthenticationForm({ onLoginSuccess }) {
   const [formType, setFormType] = useState("login");
