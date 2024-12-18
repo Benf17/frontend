@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import AuthenticationForm from "./LoginForm.js";
 import {
   BrowserRouter as Router,
   Routes,
@@ -9,6 +8,7 @@ import {
 } from "react-router-dom";
 import AdminHome from "./AdminHome.js";
 import CustomerHome from "./CustomerHome.js";
+import AuthenticationForm from "./LoginForm.js";
 import Orders from "./Orders.js";
 import Order from "./Order.js";
 import AddProduct from "./AddProduct.js";
